@@ -11,7 +11,7 @@ data class Pessoa(
     val id: Int) {
 
     override fun toString(): String {
-        return nome + " - " + fone
+        return "$id / $nome - $fone"
     }
 
 }

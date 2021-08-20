@@ -19,4 +19,7 @@ interface PessoaDAO {
 
     @Query("SELECT * FROM Pessoa")
     fun listar(): List<Pessoa>
+
+    @Query("SELECT * FROM Pessoa ORDER BY nome")
+    fun listarPorNome(): List<Pessoa>
 }
